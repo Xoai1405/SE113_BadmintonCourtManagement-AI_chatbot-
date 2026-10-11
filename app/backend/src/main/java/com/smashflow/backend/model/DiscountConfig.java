@@ -2,6 +2,8 @@ package com.smashflow.backend.model;
 
 import java.math.BigDecimal;
 
+import com.smashflow.backend.model.enums.DiscountStatus;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

@@ -1,5 +1,7 @@
 package com.smashflow.backend.model;
 
+import com.smashflow.backend.model.enums.CourtStatus;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
