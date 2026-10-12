@@ -1,11 +1,16 @@
-import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CourtList from './pages/CourtList';
+import CourtDetail from './pages/CourtDetail';
 
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<CourtList />} />
+        <Route path="/court/:id" element={<CourtDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
